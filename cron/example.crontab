@@ -1,0 +1,6 @@
+# Refresh market data every weekday at 9:00 AM.
+# Replace /ABSOLUTE/PATH/TO/stock-finance-dashboard with your real path.
+0 9 * * 1-5 cd /ABSOLUTE/PATH/TO/stock-finance-dashboard && . .venv/bin/activate && mkdir -p logs && python scripts/update_data.py >> logs/cron.log 2>&1
+
+# Generate a report every weekday at 9:05 AM.
+5 9 * * 1-5 cd /ABSOLUTE/PATH/TO/stock-finance-dashboard && . .venv/bin/activate && mkdir -p logs && python scripts/generate_report.py >> logs/cron.log 2>&1
