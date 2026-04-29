@@ -105,17 +105,6 @@ See `sql/trend_queries.sql` for examples covering:
 - Latest trend classification
 - Volume spikes
 
-## GitHub Push Commands
-
-```bash
-git init
-git add .
-git commit -m "Build stock finance analytics dashboard"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/stock-finance-dashboard.git
-git push -u origin main
-```
-
 ## Notes
 
 - SQLite keeps the project easy to run locally.
